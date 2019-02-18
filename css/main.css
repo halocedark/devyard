@@ -55,6 +55,12 @@ body {
 	color: #4d4d4d;
 	text-decoration: none;
 	text-transform: uppercase;
+	text-shadow: 0 0 2px #cccccc,
+		     0 2px 2px #e6fff2,
+		     0 2px 2px #bfbfbf,
+		     0 2px 2px #b3b3b3,
+		     0 2px 2px #a6a6a6,
+		     0 2px 2px #999999;
 	font-family: 'Redressed', cursive;
 }
 .header-wrapper .mainmenu li a::after {
@@ -93,6 +99,12 @@ body {
 	font-family: 'Berkshire Swash', cursive;
 	line-height: 4;
 	color: #404040;
+	text-shadow: 0 0 2px #e6f2ff,
+		     1px 1px 2px #e6fff2,
+		     2px 2px 2px #a6a6a6,
+		     3px 3px 2px #e6ffcc,
+		     4px 4px 2px #ffe6cc,
+		     5px 5px 2px #f2e6d9;
 }
 /*Description End*/
 
