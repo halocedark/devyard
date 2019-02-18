@@ -93,12 +93,6 @@ body {
 	font-family: 'Berkshire Swash', cursive;
 	line-height: 4;
 	color: #404040;
-	text-shadow: 0 0 2px black,
-		     1px 0 2px black,
-		     2px 0 2px black,
-		     3px 0 2px black,
-		     4px 0 2px black,
-		     5px 0 2px black;
 }
 /*Description End*/
 
