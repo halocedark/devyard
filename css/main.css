@@ -1,10 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Redressed');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Black+Ops+One');
+
 * {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "arial", sans-serif;
+}
+body {
+	background: #d9d9d9;
+}
+.main {
+	background: -webkit-gradient(linear, left bottom, right top, from(#ffffff), color-stop(#fffeff), color-stop(#fffcfc), color-stop(#fffcf4), to(#fffef0));
+	background: -webkit-linear-gradient(left bottom, #ffffff, #fffeff, #fffcfc, #fffcf4, #fffef0);
+	background: -o-linear-gradient(left bottom, #ffffff, #fffeff, #fffcfc, #fffcf4, #fffef0);
+	background: linear-gradient(to right top, #ffffff, #fffeff, #fffcfc, #fffcf4, #fffef0);	
+	height: 1000px;
+	-webkit-box-shadow: 0px 0px 10px #999999;
+	        box-shadow: 0px 0px 10px #999999;
+}
+/*Header Start*/
+.header-wrapper {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.header-wrapper .logo {
+	width: 220px;
+	height: 100%;
+	color:  #404040;
+	font-size: 2em;
+	font-weight: bold;
+	text-shadow: 2px 1px 2px black;
+	text-align: center;
+	font-family: 'Black Ops One', cursive;
+	padding: 13px;
+	margin: 10px 100px 5px 0;
+	float: left;
+}
+.header-wrapper .navbar {
+	width: 500px;
+	float: left;
+}
+.header-wrapper .mainmenu {
+	float: left;
+}
+.header-wrapper .mainmenu li {
+	float: left;
+	list-style: none;
+}
+.header-wrapper .mainmenu li a {
+	padding: 25px 15px 0 10px;
+	display: block;
+	color: #4d4d4d;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Redressed', cursive;
+}
+.header-wrapper .mainmenu li a::after {
+	content: " ";
+	display: block;
+	width: 0%;
+	height: 2px;
+	background: -webkit-gradient(linear, left bottom, right top, from(#d6b516), color-stop(#9ad369), color-stop(#74e4b8), color-stop(#8debef), to(#cceeff));
+	background: -webkit-linear-gradient(left bottom, #d6b516, #9ad369, #74e4b8, #8debef, #cceeff);
+	background: -o-linear-gradient(left bottom, #d6b516, #9ad369, #74e4b8, #8debef, #cceeff);
+	background: linear-gradient(to right top, #d6b516, #9ad369, #74e4b8, #8debef, #cceeff);
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
-h1 {
-  background: rgba(0,0,0,0.3);
-  color: #fff;
+.header-wrapper .mainmenu li a:hover {
+	opacity: 0.8;
 }
+
+.header-wrapper .mainmenu li a:hover::after {
+	width: 100%;		
+}
+/*Header End*/
+
+/*Description Start*/
+.description {
+	text-align: center;
+	height: 100px;
+	border-top: 5px solid #333333; 
+	border-bottom: 5px solid #333333; 
+	margin-bottom: 30px;
+}
+.description h2 {
+	font-size: 1.3em;
+	font-family: 'Berkshire Swash', cursive;
+	line-height: 4;
+	color: #404040;
+}
+/*Description End*/
+
+/*Slider Start*/
+.slider-wrapper {
+	background: #262626;
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.slider-wrapper .arrow-left, .arrow-right {
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.5);
+	        box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.slider-wrapper .arrow-left {
+	position: absolute;
+	left: -100px;
+	top: 0;
+	background: rgba(0,0,0,0.3);
+	height: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+.slider-wrapper .arrow-right {
+	position: absolute;
+	right: -100px;
+	top: 0;
+	background: rgba(0,0,0,0.3);
+	height: 100%;
+	text-align: center;
+	cursor: pointer;
+} 
+.slider-wrapper .arrow-left i {
+	padding: 200px 20px 10px 20px;
+	color: #f2f2f2;
+	font-size: 2em;
+}
+.slider-wrapper .arrow-right i {
+	padding: 200px 20px 10px 20px;
+	color: #f2f2f2;
+	font-size: 2em;
+}
+.slider-wrapper .slides {
+	width: 4440px;
+	height: 100%;
+}
+.slider-wrapper .slides .slide {
+	float: left;
+	width: 1110px;
+	height: 100%;
+}
+.slider-wrapper .slides .slide img {
+	width: 100%;
+	height: 100%;	
+}
+
+.slider-wrapper:hover .arrow-left {
+	left: 0;
+}
+
+.slider-wrapper:hover .arrow-right{
+	right: 0;
+}
+/*Slider End*/
+
+/*Description Media*/
+@media (max-width: 990px) {
+	.description h2 {
+		font-size: 0.8em;
+		font-family: 'Berkshire Swash', cursive;
+		line-height: 4;
+		color: #404040;
+	}	
+
+}
+/*End*/
