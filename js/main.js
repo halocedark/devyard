@@ -46,7 +46,7 @@ $( document ).ready(function() {
 		}
 	}
 
-
+	SetInterval(nextSlide, SlideTime);
 	
 
 });
